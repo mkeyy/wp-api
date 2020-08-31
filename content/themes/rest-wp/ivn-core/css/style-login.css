@@ -1,0 +1,102 @@
+body.login {
+	background: #222222 url('images/login-background.png') no-repeat bottom right;
+}
+.login #nav a,
+.login #backtoblog a {
+	color: #afafaf !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	-webkit-transition: color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out;
+	-o-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
+}
+.login #nav a:hover,
+.login #backtoblog a:hover {
+	color: #79b43c !important;
+}
+.login div h1 a {
+	background-image: url('images/login-logo.png');
+	background-size: 224px 60px;
+	width: auto;
+}
+.login div .message {
+	background: #79b43c;
+	border-color: #466823;
+	color: #ffffff;
+}
+.login div form {
+	background: #5a5959;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	padding: 24px 24px 50px;
+}
+.login #user_login,
+.login #user_pass {
+	background: #404040;
+	-webkit-border-radius: 27px;
+	-moz-border-radius: 27px;
+	border-radius: 27px;
+	height: 27px;
+	border: none;
+	outline: none;
+	box-shadow: inset 0 1px 2px #363636;
+	color: #929292;
+	padding: 0 14px;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 6px;
+	-webkit-transition: background-color 0.3s ease-out;
+	-moz-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out;
+	transition: background-color 0.3s ease-out;
+}
+.login #user_login:focus,
+.login #user_pass:focus {
+	background: #454545;
+}
+.login div label {
+	color: #afafaf;
+	font-size: 13px;
+	font-weight: bold;
+}
+.login form .forgetmenot {
+	position: relative;
+	height: 27px;
+}
+.login form .forgetmenot label {
+	line-height: 27px;
+}
+.login form .forgetmenot input[type="checkbox"] {
+	margin: 1px 5px 0 0;
+}
+.login form .button-primary {
+	background: #79b43c;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	-webkit-border-radius: 27px;
+	-moz-border-radius: 27px;
+	border-radius: 27px;
+	height: 27px !important;
+	line-height: 27px !important;
+	padding: 0 14px !important;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	-webkit-transition: background-color 0.3s ease-out;
+	-moz-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out;
+	transition: background-color 0.3s ease-out;
+
+}
+.login form .button-primary:hover,
+.login form .button-primary:focus,
+.login form .button-primary:active {
+	background: #669b30;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+}

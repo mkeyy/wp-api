@@ -1,0 +1,58 @@
+{
+  "name": "ivn/rest-wp",
+  "description": "Rest WP",
+  "license": "proprietary",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/wordpress",
+        "version": "5.5",
+        "type": "wordpress-core",
+        "dist": {
+          "type": "zip",
+          "url": "https://wordpress.org/wordpress-5.5.zip"
+        },
+        "require": {
+          "johnpbloch/wordpress-core-installer": "0.2.1"
+        }
+      }
+    }
+  ],
+  "config": {
+    "process-timeout": 300
+  },
+  "autoload": {
+    "psr-0": {"Ivn\\BaseTheme\\Installer": "scripts"}
+  },
+  "scripts": {
+    "post-install-cmd": ["Ivn\\BaseTheme\\Installer::moveInstallerFile"],
+    "post-update-cmd": ["Ivn\\BaseTheme\\Installer::moveInstallerFile"]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.2",
+    "composer/installers": "1.0.16",
+    "johnpbloch/wordpress-core-installer": "0.2.1",
+    "alexis-magina/cmb2-field-post-search-ajax": "dev-master",
+    "wordpress/wordpress": "5.5",
+    "wpackagist-plugin/force-regenerate-thumbnails": "2.0.6",
+    "cmb2/cmb2": "2.7",
+    "ext-json": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": {
+      "wordpress/wordpress": "wordpress"
+    }
+  }
+}
